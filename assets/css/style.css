@@ -1,4 +1,8 @@
-/* Implementing Roboto Font for all text tags */
+/* Global Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 h1,
 h2,
@@ -6,10 +10,27 @@ h3,
 h4,
 h5,
 h6,
-a,
 p {
-  font-family: "Roboto", sans-serif;
   color: #4a4a4a;
+}
+
+a {
+  color: #0fa79c;
+}
+
+/* Text Color Classes */
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-default {
+  color: #4a4a4a;
+}
+
+a:hover {
+  color: #4a4a4a;
+  text-decoration: none;
 }
 
 .nav-link {
@@ -19,16 +40,75 @@ p {
   margin: 0 auto;
 }
 
+/* Extra padding */
 .pl-6 {
   padding-left: 4rem !important;
+}
+.pr-6 {
+  padding-right: 4rem !important;
+}
+.pt-6 {
+  padding-top: 4rem !important;
+}
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+.px-6 {
+  padding: 0rem 4rem;
+}
+
+.py-6 {
+  padding: 4rem 0rem;
+}
+
+.py-7 {
+  padding: 5rem 0rem;
+}
+
+.pl-7 {
+  padding-left: 5rem !important;
+}
+.pr-7 {
+  padding-right: 5rem !important;
+}
+.pt-7 {
+  padding-top: 5rem !important;
+}
+.pb-7 {
+  padding-bottom: 5rem !important;
+}
+.px-7 {
+  padding: 0rem 5rem;
+}
+
+/* Extra Margin */
+
+.mt-6 {
+  margin-top: 4rem;
+}
+
+.mr-6 {
+  margin-right: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 4rem;
+}
+
+.ml-6 {
+  margin-left: 4rem;
+}
+
+.my-6 {
+  margin: 4rem 0rem;
+}
+
+.mx-6 {
+  margin: 0rem 4rem;
 }
 
 .col {
   flex-grow: 0;
-}
-
-.login-text {
-  color: #000000;
 }
 
 .bg-gray {
@@ -105,6 +185,7 @@ p {
 .btn-primary {
   background-color: #0fa79c;
   border-color: #0fa79c;
+  border-radius: 35.5px;
 }
 
 .btn-primary:hover {
@@ -209,6 +290,10 @@ select:not([multiple]) {
   border: 1px solid #979797;
 }
 
+.divider-2 {
+  border: 1px solid #ffffff;
+}
+
 .jumbotron > h2 {
   font-weight: 400;
   font-style: italic;
@@ -232,13 +317,170 @@ select:not([multiple]) {
   padding-top: 2rem;
 }
 
-.divider-2 {
+.infographic {
+  width: 100px;
+}
+
+.divider-1 {
   width: 332px;
   border: 1px solid #c7c7c7;
 }
 
-.concept-benefit > img {
+.divider-2 {
+  width: 332px;
+  border: 1px solid #ffffff;
+}
+
+.divider-3 {
+  max-width: 945px;
+  border: 1px solid #c7c7c7;
+}
+
+.img-center {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Section Global Style */
+
+.section-title {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+/* Partnership Team Section */
+
+.section-2 {
+  background-color: #eeeeee;
+}
+
+.partner-img {
+  width: 100%;
+}
+
+.partner-row {
+  max-width: 736px;
+}
+
+.partner-col {
+  background-color: #ffffff;
+}
+
+.partner-name {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.partner-email {
+  font-size: 22px;
+  line-height: 16px;
+}
+
+.partner-phone {
+  font-size: 22px;
+  color: #4a4a4a;
+  line-height: 16px;
+}
+
+.schedule {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 12px;
+}
+/* Resources Section */
+
+.section-3 {
+  background-color: #04a89b;
+}
+
+.resources-title {
+  color: #ffe9af;
+  font-weight: 500;
+}
+
+/* Pricing Box */
+
+.pricing-box {
+  border: 4px solid #ffe9af;
+  max-width: 700px;
+}
+
+.checkbox {
+  width: 40px;
+}
+
+.pricing-list {
+  list-style: none;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.pricing-blurb {
+  max-width: 90%;
+}
+
+.pricing-blurb > h3 {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Checkmate Video */
+
+.checkmate-video {
+  width: 100%;
+}
+
+/* Share a Lead Section */
+
+.lead-blurp {
+  max-width: 700px;
+}
+
+.share-lead-blurp {
+  font-weight: 300;
+}
+
+.lead-form {
+  max-width: 700px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #0fa79c;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom: 1;
+  *display: inline;
+}
+
+.footer-contact ul li {
+  float: left;
+  padding: 0px 10px;
+  list-style: none;
+}
+
+.footer-details {
+  font-size: 28px;
+}
+
+.footer-logo {
+  max-width: 30%;
+}
+
+.copyright {
+  font-size: 24px;
 }
