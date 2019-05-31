@@ -476,7 +476,7 @@ select:not([multiple]) {
 .resources-blurp {
   color: #ffe9af;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .resources-icon {
@@ -523,12 +523,24 @@ select:not([multiple]) {
   max-width: 700px;
 }
 
+.we-want-lead > h3 {
+  font-size: 36px;
+}
+
 .share-lead-blurp {
   font-weight: 300;
+  line-height: 37px;
 }
 
 .lead-form {
   max-width: 700px;
+}
+
+.submit {
+  font-size: 32px;
+  border-radius: 50px;
+  max-width: 330px;
+  padding: 15px 100px 16px;
 }
 
 /* Footer */
