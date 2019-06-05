@@ -195,7 +195,7 @@ a:hover {
 }
 /*shift menu display down*/
 .shift-down {
-  margin-top: 117px;
+  margin-top: 93px;
 }
 
 /* custom icons */
@@ -348,6 +348,26 @@ select:not([multiple]) {
   background-color: #ffffff;
 }
 
+.divider-0 {
+  max-width: 750px;
+  border: 1px solid #c7c7c7;
+}
+
+.divider-1 {
+  max-width: 332px;
+  border: 1px solid #c7c7c7;
+}
+
+.divider-2 {
+  width: 332px;
+  border: 1px solid #ffffff;
+}
+
+.divider-3 {
+  max-width: 945px;
+  border: 1px solid #c7c7c7;
+}
+
 /* Jumbotron Section */
 
 .jumbotron {
@@ -386,28 +406,38 @@ select:not([multiple]) {
   padding-top: 2rem;
 }
 
-.infographic {
-  width: 115px;
+.benefits {
+  list-style: none;
 }
 
-.divider-0 {
-  max-width: 750px;
-  border: 1px solid #c7c7c7;
+@media (max-width: 991px) {
+  .hide-benefits-right {
+    display: none;
+  }
+  .infographic {
+    width: 100px;
+  }
+  .show-concept-text {
+    display: none;
+  }
 }
 
-.divider-1 {
-  max-width: 332px;
-  border: 1px solid #c7c7c7;
-}
-
-.divider-2 {
-  width: 332px;
-  border: 1px solid #ffffff;
-}
-
-.divider-3 {
-  max-width: 945px;
-  border: 1px solid #c7c7c7;
+@media (min-width: 992px) {
+  .hide-benefits-row {
+    display: none;
+  }
+  .divider-1 {
+    display: none;
+  }
+  .concept {
+    border-right: 2px solid #0fa79c;
+  }
+  .infographic {
+    width: 70px;
+  }
+  .hide-concept-text {
+    display: none;
+  }
 }
 
 .img-center {
@@ -433,32 +463,29 @@ select:not([multiple]) {
   width: 100%;
 }
 
-.partner-row {
-  max-width: 736px;
-}
-
-.partner-col {
-  background-color: #ffffff;
-}
-
 .partner-name {
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 500;
 }
 
+.partner-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .partner-email {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 16px;
 }
 
 .partner-phone {
-  font-size: 22px;
+  font-size: 18px;
   color: #4a4a4a;
   line-height: 16px;
 }
 
 .schedule {
-  font-size: 22px;
+  font-size: 18px;
   font-style: italic;
   line-height: 12px;
 }
@@ -524,7 +551,7 @@ select:not([multiple]) {
 }
 
 .we-want-lead > h3 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .share-lead-blurp {
@@ -540,7 +567,7 @@ select:not([multiple]) {
   font-size: 32px;
   border-radius: 50px;
   max-width: 330px;
-  padding: 15px 100px 16px;
+  padding: 8px 100px 9px;
 }
 
 /* Footer */
