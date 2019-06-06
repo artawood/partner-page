@@ -194,8 +194,16 @@ a:hover {
   font-weight: 500;
 }
 /*shift menu display down*/
-.shift-down {
-  margin-top: 93px;
+@media (max-width: 767px) {
+  .shift-down {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .shift-down {
+    margin-top: 93px;
+  }
 }
 
 /* custom icons */
@@ -327,6 +335,19 @@ select:not([multiple]) {
   padding: 20px 65px;
 }
 
+.navbar-brand {
+  margin-right: 4.5rem;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    padding-left: 4rem;
+  }
+}
+
+.navbar-toggler-icon {
+  padding-top: 4px;
+}
+
 .navbar-nav {
   padding-left: 70px;
   padding-top: 25px;
@@ -340,8 +361,15 @@ select:not([multiple]) {
   font-size: 24px;
 }
 
-.logo {
-  max-width: 275px;
+@media (max-width: 991px) {
+  .logo {
+    max-width: 220px;
+  }
+}
+@media (min-width: 991px) {
+  .logo {
+    max-width: 275px;
+  }
 }
 
 .bg-white {
@@ -349,7 +377,7 @@ select:not([multiple]) {
 }
 
 .divider-0 {
-  max-width: 750px;
+  max-width: 650px;
   border: 1px solid #c7c7c7;
 }
 
@@ -372,37 +400,57 @@ select:not([multiple]) {
 
 .jumbotron {
   background-color: transparent;
-  max-width: 75%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
 .jumbotron > h1 {
   font-weight: 500;
+  margin: 0;
 }
 
 .jumbotron > h2 {
   font-weight: 400;
   font-style: italic;
-  letter-spacing: 4px;
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 767px) {
+  .jumbotron > h1 {
+    font-size: 2rem;
+  }
+
+  .jumbotron > h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .jumbotron > h1 {
+    font-size: 3rem;
+  }
+
+  .jumbotron > h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Concept Section */
 
 .concept > img {
-  width: 90%;
+  width: 80%;
   display: block;
   margin-right: auto;
   margin-left: auto;
 }
 
 .concept-text {
-  max-width: 830px;
+  max-width: 770px;
 }
 
 .concept-text > h2 {
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-top: 2rem;
 }
 
@@ -503,17 +551,31 @@ select:not([multiple]) {
 .resources-blurp {
   color: #ffe9af;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 28px;
+}
+
+.resources-download {
+  width: 200px;
 }
 
 .resources-icon {
   width: 150px;
 }
+
+.resources-icon-text {
+  font-weight: 400;
+  width: 230px;
+}
 /* Pricing Box */
+
+.pricing-title {
+  color: #ffe9af;
+  font-weight: 400;
+}
 
 .pricing-box {
   border: 4px solid #ffe9af;
-  max-width: 700px;
+  max-width: 625px;
 }
 
 .checkbox {
@@ -523,19 +585,40 @@ select:not([multiple]) {
 .pricing-list {
   list-style: none;
   color: #ffffff;
-  font-size: 32px;
-  font-weight: 500;
-}
-
-.pricing-blurb {
-  max-width: 90%;
+  font-weight: 400;
 }
 
 .pricing-blurb > h3 {
   color: #ffffff;
   font-style: italic;
-  font-size: 30px;
   font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .pricing-title {
+    font-size: 22px;
+  }
+  .pricing-list {
+    font-size: 18px;
+  }
+  .pricing-blurb > h3 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricing-title {
+    font-size: 32px;
+  }
+  .pricing-list {
+    font-size: 28px;
+  }
+  .pricing-blurb {
+    max-width: 80%;
+  }
+  .pricing-blurb > h3 {
+    font-size: 28px;
+  }
 }
 
 /* Checkmate Video */
